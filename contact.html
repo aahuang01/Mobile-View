@@ -4,26 +4,31 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2c3b314ae2.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/logo.ico" type="image/gif">
     <title>Contact Me</title>
     
 </head>
-<body>
+<body id="contact">
     <a class="skip" href="#main">Skip to Main Content</a>
     <header>
         <nav>
             <ul>
-                <li class = "active"><a href = "contact.html">Contact Me</a></li>
                 <li><a href = "index.html">Home</a></li>
                 <li><a href = "bokuto.html">Kotaro Bokuto</a></li>
                 <li><a href = "kuroo.html">Tetsuro Kuroo</a></li>
                 <li><a href = "nishinoya.html">Yu Nishinoya</a></li>
+                <li class = "active"><a href = "contact.html">Contact Me</a></li>
             </ul>
         </nav>
-        <h1>Contact Me For Portfolio Review</h1>
+        <h1>Share your thoughts with me!</h1>
+        <h2>Do you disagree? Attach a reaction picture! <i class="fa-regular fa-image"></i></h2>
     </header>
-        <main>
+        <main id="main">
             <form action="https://formspree.io/f/mqknllaa" method="POST">
             <label>
                 Your email:
@@ -34,7 +39,7 @@
                 <textarea name="message"></textarea>
             </label>
             
-            <label for="myfile">Select a file:
+            <label for="myfile">Select an image: <i class="fa-regular fa-image"></i> 
             <input type="file" id="myfile" name="myfile">
             </label>
             <button type="submit">Send</button>
