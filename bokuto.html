@@ -26,14 +26,14 @@
     </header>
         <main id="main">
             <div class="pix">
-                <img src = "images/bokutoexcite.jpg" alt="Bokuto expressing excitement before the match" width="200"/>
-                <img src = "images/bokutoproud.jpg" alt="Bokuto looking very proud of his last spike" width="200"/>
-                <img src = "images/bokutofiredup.jpg" alt="Bokuto getting very fired up about his performance" width="200"/>
+                <img src = "images/bokutoexcite.jpg" alt="Bokuto expressing excitement before the match" width="200" id="bok1"/>
+                <img src = "images/bokutoproud.jpg" alt="Bokuto looking very proud of his last spike" width="200" class="rotate" id="bok2" onclick="brotato()"/>
+                <img src = "images/bokutofiredup.jpg" alt="Bokuto getting very fired up about his performance" width="200" id="bok3"/>
                 <img src = "images/bokutowindup.jpg" alt="Bokuto in the middle of his elegant spike windup" width="200"/>
-                <img src = "images/bokutoform.jpg" alt="Bokuto's exceptional spiking form from the back angle" width="200"/>
+                <img src = "images/bokutoform.jpg" alt="Bokuto's exceptional spiking form from the back angle" class="rotate" width="200" onclick="brotato()"/>
                 <img src = "images/bokutoaura.jpg" alt="Bokuto with an extremely intimidating aura" width="200"/>
                 <img src = "images/bokutoakaashi.png" alt="Bokuto overwhelming his setter, Akaashi, with his excitement" width="200"/>
-                <img src = "images/bokutoderp.jpg" alt="Bokuto with a very blank derpy expression" width="200"/>
+                <img src = "images/bokutoderp.jpg" alt="Bokuto with a very blank derpy expression" class="rotate" width="200" onclick="brotato()"/>
                 <img src = "images/bokutofaces.jpg" alt="Bokuto making faces at someone else" width="200"/>
             
                 <p class="content" id="bok">
@@ -41,7 +41,8 @@
                 and is their starting outside hitter and has been their ace for the past three years. Out of raw volleyball skill,
                 this man is the best out of all three characters that I will be featuring. He has been acknowledged as one of the
                 top five aces in Japan, barely missing the top three.
-                <br><br>
+                </p>
+                <p class="content" id="bokbok">
                 Other than being an absolute beast on the court, this man is the one of the FUNNIEST people in all of Haikyuu and
                 serves as the self-proclaimed mentor of the main character of the series, Hinata Shoyo. He is insanely passionate
                 about the sport of volleyball and is an important figure in the protagonist's journey of technical development.
@@ -54,5 +55,19 @@
     <footer>
         <p>Aaron Huang &copy; 2022</p>
     </footer>
+    <script>
+        function brotato() {
+            var col = document.getElementsByClassName("content")[0].style.color
+            if (col == "black"){
+                document.getElementsByClassName("content")[0].style.color = "white"
+                document.getElementsByClassName("content")[1].style.color = "white"
+            }
+            else {
+                document.getElementsByClassName("content")[0].style.color = "black"
+                document.getElementsByClassName("content")[1].style.color = "black"
+            }
+            
+        }
+    </script>
 </body>
 </html>
